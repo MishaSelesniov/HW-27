@@ -1,0 +1,83 @@
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: orange;
+}
+
+.section {
+    display: flex;
+    gap: 0px
+    ;
+    
+}
+
+
+ul {
+    list-style: none; 
+  }
+  
+  li {
+    position: relative; 
+    padding-left: 20px; 
+    margin-bottom: 10px; }
+  
+  li::before {
+    position: absolute; 
+    left: 0; 
+    top: 10%; 
+    transform: translatey(-50%); 
+    width: 10px; 
+    height: 10px; 
+    background-color: orange; 
+    transform: rotate(45deg); 
+    
+  }
+
+.overflow {
+    width: 270px;
+    height: 330px;
+   
+    background-color: gray;
+    transition:  0.3s ease-in-out;
+    transform: translateX(-200px);
+}
+
+
+.overflow-text {
+    writing-mode: vertical-rl;
+    color: white;
+    bottom: 175px;
+    text-align: center;
+}
+
+.overfl-list-item {
+ margin-bottom: 0px;
+}
+
+.overflow-list-text:hover {
+    color: orange;
+}
+
+.overflow-open {
+    width: 20px;
+    height: 300px;
+    padding: 3px 0 0 0;
+    margin-left: 190px
+
+}
+
+.overflow-div {
+    overflow: hidden
+}       
+
+.overflow:hover {
+    transition: transform 0.3s ease-in-out;
+    transform: translatex(1px)
+}
+
+.overflow:hover .overflow-text {
+    color: transparent
+}
